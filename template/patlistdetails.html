@@ -1,0 +1,41 @@
+<html>
+<head>
+<title></title>
+<body>
+
+<h1>Patient list details</h1>
+<br>
+
+<table border="5">
+  <tr>
+    <th>id</th>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>profilepicture</th>
+    <th>Address_line1</th>
+    <th>city</th>
+    <th>state</th>
+    <th>pincode</th>
+
+
+  </tr>
+{% for s in patient_list %}
+<tr>
+  <td><a href="/pat/patlistdetails/{{s.id}}">{{s.id}}</a> </td>
+  <td>{{s.FirstName}}</td>
+  <td>{{s.LastName}}</td>
+  <td>{{s.profilepicture}}</td>
+  <td>{{s.Address_line1}}</td>
+  <td>{{s.city}}</td>
+  <td>{{s.state}}</td>
+  <td>{{s.pincode}}</td>
+
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+
+
+</html>

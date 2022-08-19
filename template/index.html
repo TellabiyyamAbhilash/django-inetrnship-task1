@@ -1,0 +1,46 @@
+{%  load static %}
+
+<html>
+<head>
+<title>Welcome to the TASK</title>
+<link rel="stylesheet" href="{% static "stylesheet/style.css" %}"/>
+</head>
+
+<body>
+
+<h2>
+<img src="{% static "images/Screenshot(29).png" %}" width="100" height="100" alt="image not found"/>ABHI HIGH SCHOOL
+</h2>
+<br>
+<hr>
+<br>
+<br><br><br>
+
+
+
+
+<br><br>
+
+<div class="module">
+<h1>DOCTORS</h1>
+
+<a href="/doc/register/"><button type="button" name="button">add doctor</button></a><br><br>
+
+
+<h1>PATIENTS</h1>
+
+<a href="/pat/register/"><button type="button" name="button">Add patient</button></a><br><br>
+</div>
+
+<h2>Already a user ? </h2>
+<div class="module">
+<h2>login as </h2><a href="/doc/login/"> <button type="button" name="button"> doctor </button> </a>
+<h2>login as </h2><a href="/pat/login/"> <button type="button" name="button"> patient </button> </a>
+
+
+</div>
+
+</body>
+
+
+</html>

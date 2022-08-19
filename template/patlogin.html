@@ -1,0 +1,30 @@
+
+{%  load static %}
+
+<html>
+<head>
+</head>
+<link rel="stylesheet" href="{% static "stylesheet/style.css" %}"/>
+<body>
+
+<h1>DOCTOR'S LOGIN</h1>
+<br>
+<img src="{% static "images/abhi.jpg" %}" width="100" height="100" alt="Image Not found"/>
+
+<h3>please fill your login details</h3><br><br>
+
+<form method="POST">
+  <table>
+    {%csrf_token%}
+  {{form.as_table}}
+  <br>
+  </table>
+  <button type="submit" name="button">LOGIN</button>
+
+</form>
+
+
+</body>
+
+
+</html>
